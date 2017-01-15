@@ -38,10 +38,16 @@
                     <div class="col-sm-2 text-center">
                         <b>Qty</b>
                     </div>
-                    <div class="col-sm-2 text-right">
+                    <div class="col-sm-1 text-center">
+                        <b>unit</b>
+                    </div>
+                    <div class="col-sm-1 text-right">
                         <b>Price</b>
                     </div>
                 </div>
+            </div>
+            <div id="repeat">
+
             </div>
             <div class="panel-body">
                 <div class="row">
@@ -49,19 +55,22 @@
                         <img src="assets/P1.jpg" />
                     </div>
                     <div class="col-sm-4">
-                        <h3>Solid green cotton Tshirt</h3>
+                        <h3 class="title">Solid green cotton Tshirt</h3>
                         <div><small><b>Style #</b> : <code>MS12KTIO</code></small></div>
-                        <div><b>Clolor</b> : Blue</div>
+                        <div><b>Clolor</b> : <span class="color">Blue</span></div>
                     </div>
                     
-                    <div class="col-sm-2 text-center">
+                    <div class="col-sm-2 text-center size">
                         Small/Medium
                     </div>
                     <div class="col-sm-2 text-center">
-                        <input type="number" style="width:80px" class="form-control" placeholder="1" />
+                        <input type="number" style="width:80px" class="form-control qty" placeholder="1" />
                     </div>
-                    <div class="col-sm-2 text-right">
-                        <input type="number" style="width:80px" disabled class="form-control pull-right" placeholder="1" />
+                    <div class="col-sm-1 text-right">
+                        <input type="number" style="width:80px" disabled class="form-control pull-right unit-price" placeholder="1" />
+                    </div>
+                    <div class="col-sm-1 text-right">
+                        <input type="number" style="width:80px" disabled class="form-control pull-right price" placeholder="1" />
                     </div>
                 </div>
             </div>
@@ -155,6 +164,9 @@
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="javascripts/jquery.min.js"></script>
+<script src="javascripts/ctrl.js"></script>
 <script src="javascripts/main.js"></script>
+
 </body>
 </html>
+
