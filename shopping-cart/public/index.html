@@ -17,37 +17,156 @@
 
 <body>
 
-<!-- Begin page content -->
 <div class="container">
-    <div class="page-header">
-        <h1>Sticky footer</h1>
-    </div>
-    <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS.</p>
-    <p>Use <a href="../sticky-footer-navbar">the sticky footer with a fixed navbar</a> if need be, too.</p>
-</div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="page-header">
+                    <h1>Your Shopping Bag <small>Subtext for header</small></h1>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-sm-2 text-center">
+                        <b>Products</b>
+                    </div>
+                    <div class="col-sm-4">
+                        <b>3 Items</b>
+                    </div>
+                    <div class="col-sm-2 text-center">
+                        <b>Size</b>
+                    </div>
+                    <div class="col-sm-2 text-center">
+                        <b>Qty</b>
+                    </div>
+                    <div class="col-sm-1 text-center">
+                        <b>unit</b>
+                    </div>
+                    <div class="col-sm-1 text-right">
+                        <b>Price</b>
+                    </div>
+                </div>
+            </div>
+            <div id="repeat">
 
-<div class="container">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-sm-2 text-center">
+                        <img src="assets/P1.jpg" />
+                    </div>
+                    <div class="col-sm-4">
+                        <h3 class="title">Solid green cotton Tshirt</h3>
+                        <div><small><b>Style #</b> : <code>MS12KTIO</code></small></div>
+                        <div><b>Clolor</b> : <span class="color">Blue</span></div>
+                    </div>
+                    
+                    <div class="col-sm-2 text-center size">
+                        Small/Medium
+                    </div>
+                    <div class="col-sm-2 text-center">
+                        <input type="number" style="width:80px" class="form-control qty" placeholder="1" />
+                    </div>
+                    <div class="col-sm-1 text-right">
+                        <input type="number" style="width:80px" disabled class="form-control pull-right unit-price" placeholder="1" />
+                    </div>
+                    <div class="col-sm-1 text-right">
+                        <input type="number" style="width:80px" disabled class="form-control pull-right price" placeholder="1" />
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <ul class="list-group">
+                            <li class="list-group-item">Need help
+                                <br> or have questions?
+                            </li>
+                            <li class="list-group-item">Call Customer Services at
+                                <br> 1-800-555-5555
+                            </li>
+                            <li class="list-group-item">Chat with one of our stttylists
+                            </li>
+                            <li class="list-group-item">See return
+                                <br> & exchange policy
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-8">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="row borderB5">
+                                    <div class="col-sm-6">
+                                        <div>ENTER PROMOTION CODE OR GIFT CARD</div>
+                                    </div>
+                                    <div class="col-sm-6 text-right">
+                                        <form class="form-inline">
+                                            <div class="form-group">
+                                                <label for="" class="sr-only">Password</label>
+                                                <input type="text" class="form-control" id="promo" placeholder="Promocode">
+                                            </div>
+                                            <button id="promo-code" type="button" class="btn">APPLY</button>
+                                            <div class="green" style="color: green" id="promocodeAdded"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-8">SUBTOTAL</div>
+                                    <div class="col-sm-4 text-right"><sup>$</sup>37.00</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-8">PROMOTION CODE JF 10 APPLIED</div>
+                                    <div class="col-sm-4 text-right">-<sup>$</sup>7.00</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        ESTIMATED SHIPPING
+                                        <div>
+                                            You qualify for free shipping
+                                            <br> because your order is over $50<sup>*</sup>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 text-right"><span>FREE</span></div>
+                                </div>
+                            </li>
+                            <li class="list-group-item text-right">
+                                <div class="row">
+                                    <div class="col-sm-8">SUBTOTAL</div>
+                                    <div class="col-sm-4 text-right">
+                                        <div class="total">Sub Total Price is : $500</div>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item text-right">
+                                <a href="#">CONTINUE SHOPPING</a>
+                            </li>
+                            <li class="list-group-item text-right">
+                                <input class="btn" type="button" value="CONTINUE" />
+                            </li>
+                            <li class="list-group-item text-right">
+                                <div>
+                                    <img src="assets/lock.jpg" alt="Secure Lock" /> Secure checkout. Shopping is always sate $ secure
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="panel-body">
-            <div class="col-xs-6">Image</div>
-            <div class="col-xs-6">Content</div>
-        </div>
     </div>
-</div>
-
-
-<footer class="footer">
-    <div class="container">
-        <p class="text-muted">Place sticky footer content here.</p>
-    </div>
-</footer>
 
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="javascripts/jquery.min.js"></script>
+<script src="javascripts/ctrl.js"></script>
 <script src="javascripts/main.js"></script>
+
 </body>
 </html>
+
