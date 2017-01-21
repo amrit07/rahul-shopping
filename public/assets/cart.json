@@ -56,7 +56,7 @@
          "p_id":"2",
          "p_name":"print girls tee",
          "p_variation":"pink rainbow",
-         "p_style":"ms13kt1906",
+         "p_style":"ms13kt1908",
          "p_selected_color":{  
             "name":"pink",
             "hexcode":"#F1DDEF"
@@ -99,7 +99,7 @@
                }
             ]
          },
-         "p_quantity":1,
+         "p_quantity":2,
          "p_originalprice":17.0,
          "p_price":17.0,
          "c_currency":"$"
@@ -108,7 +108,7 @@
          "p_id":"3",
          "p_name":"flower pattern shirt",
          "p_variation":"blue",
-         "p_style":"ms13kt1906",
+         "p_style":"ms13kt1958",
          "p_selected_color":{  
             "name":"blue",
             "hexcode":"#1169BD"
@@ -151,7 +151,7 @@
                }
             ]
          },
-         "p_quantity":1,
+         "p_quantity":3,
          "p_originalprice":21.0,
          "p_price":9.0,
          "c_currency":"$"
@@ -203,7 +203,7 @@
                }
             ]
          },
-         "p_quantity":1,
+         "p_quantity":4,
          "p_originalprice":22.0,
          "p_price":22.0,
          "c_currency":"$"
