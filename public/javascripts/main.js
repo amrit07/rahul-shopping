@@ -34,18 +34,56 @@ $(function(){
                 $newItem.find('.qty').val(qty);
                 $newItem.find('.unit-price').val(unitPrice);
                 $newItem.find('.price').val(unitPrice);
-                
-
 
                 divStorage.append($newItem);
+                
             }
             //console.log("divstorage is ",divStorage);
-            $("#repeat").append(divStorage);
+            var itemLength = $("#repeat").append(divStorage);
+            
+            //console.log(itemLength.length);
+
+            for(var x in itemLength){
+                //console.log(x);
+            }
+
             //callback
             itemReady();
-            });
-           
 
+            $("#previous").on('click', function(){
+                alert(0);
+            });
+            $("#next").on('click', function(){
+                alert(1);
+            });
+
+
+
+            var x = 'APL10';
+            $("#promo-code").on("click", function(){
+                var input = $(this).parent().find("#promo").val();
+                if(input == x){
+                    console.log('You are right');
+                    $(this).css({
+                    'background' : 'green',
+                    'color' : 'white'
+                }).text('Coupon Applied');
+                }else if(input == ''){
+                    console.log('doing wrong');
+                    $(this).css({
+                    'background' : 'red',
+                    'color' : 'white'
+                }).text('Please Apply valid coupon  ');
+                }else{
+                    $(this).css({
+                    'background' : 'red',
+                    'color' : 'white'
+                }).text('Not Valid');
+                }
+            })
+
+
+            });
         },
         error:function(error){
             console.log("error is ",error);
